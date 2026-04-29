@@ -14,7 +14,8 @@
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 14px;
-  --container: 1180px;
+  --container: 2200px;
+  --gutter: clamp(0.75rem, 2vw, 1.5rem);
 }
 
 * {
@@ -45,7 +46,7 @@ img {
 }
 
 .container {
-  width: min(var(--container), calc(100% - 2rem));
+  width: min(var(--container), calc(100% - (var(--gutter) * 2)));
   margin: 0 auto;
 }
 
